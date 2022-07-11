@@ -41,11 +41,11 @@
 			<div class="card shadow">
 			  <a href="/product/{{product.slug}}/{{product.id}}"><img src="{% static '/media/images/sapatos.jpg' %}" class="card-img-top" alt="{{product.title}}"></a>
 			  <div class="card-body">
-			    <h5 class="card-text"><a href=""></a>Sapatos</h5>
+			    <h5 class="card-text"><a href=""></a>Comidas</h5>
           <h6>R$ <span class=""></span></h6>
 			  </div>
 			  <div class="card-footer">
-         
+
           <input type="hidden" value="1" class="form-control product-qty-{{product.id}}" id="productQty" />
           <input type="hidden" class="product-image-{{product.id}}" value="{{product.productattribute_set.first.image}}" />
           <input type="hidden" class="product-id-{{product.id}}" value="{{product.id}}" />
