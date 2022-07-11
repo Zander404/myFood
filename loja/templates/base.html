@@ -18,7 +18,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 		<div class="container">
-		  <a class="navbar-brand" href="/loja/static">Loja Django</a>
+		  <a class="navbar-brand" href="{% url "index" %}">Loja Django</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -33,7 +33,7 @@
 		    </form>
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item">
-		        <a class="nav-link text-white" href="/loja/static">Home</a>
+		        <a class="nav-link text-white" href="{% url "index" %}">Home</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link text-white" href="{% url 'category-list'%}">Categorias</a>
@@ -69,7 +69,7 @@
 <footer class="pt-4 my-md-5 pt-md-5 border-top container" >
     <div class="row">
         <div class="col-12 col-md">
-        <a href="#">Loja Django 2022</a>
+        <a href="{% url "index" %}">Loja Django 2022</a>
         <small class="d-block mb-3 text-muted">&copy; 2022</small>
         </div>
         <div class="col-6 col-md">
