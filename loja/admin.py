@@ -9,7 +9,7 @@ admin.site.register(Marca)
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'marca', 'size', 'status')
+    list_display = ('id', 'title', 'marca', 'size', 'status')
     list_editable = ('status',)
 admin.site.register(Product, ProductAdmin)
 
